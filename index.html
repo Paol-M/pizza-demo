@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paol Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+        <div class="banner">
+            <p>This is a work-in-progress demo website for a business that doesn't exist. Most buttons do not work yet.</p>
+            <button type="button" title="close" onclick="this.parentElement.style.display='none';">
+                <img src="imgs/symbols/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
+        </div>
+    <nav>
+        <a href="./"><img src="imgs/Text logo.svg" alt="Paol" /></a>
+    </nav>
+    <main>
+        <article>
+            <h1>Delicious pizza</h1>
+            <img src="./imgs/Pizza.webp" alt="">
+            <div class="buttons">
+                <a href="tel:5551234567" class="button button_secondary">Call us</a>
+                <a class="button button_primary">Order online</a>
+            </div>
+        </article>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="promotions">
+                <img src="./imgs/Pizza Promotion.jpg" alt="Limited-time offer, 20% off beef pizza">
+            </div>
+            <h3>Popular</h3>
+            <ul class="pizza_types">
+                <li>
+                    <button>
+                        <img src="./imgs/pizza_types/Cheese.png" alt="">
+                        <h4>Pepperoni</h4>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="./imgs/pizza_types/Cheese.png" alt="">
+                        <h4>Vegetarian</h4>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="./imgs/pizza_types/Cheese.png" alt="">
+                        <h4>Barbeque</h4>
+                    </button>
+                </li>
+            </ul>
+            <h3>All pizzas</h3>
+            <ul class="filter">
+                <li><button class="button button_inactive">Vegan</button></li>
+                <li><button class="button button_inactive">Halal</button></li>
+                <li><button class="button button_active">Vegetarian</button></li>
+            </ul>
+            <ul class="pizza_types">
+                <li>
+                    <button>
+                        <img src="./imgs/pizza_types/Cheese.png" alt="">
+                        <h4>Pepperoni</h4>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="./imgs/pizza_types/Cheese.png" alt="">
+                        <h4>Vegetarian</h4>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="./imgs/pizza_types/Cheese.png" alt="">
+                        <h4>Barbeque</h4>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <aside class="get_email">
+        <h2>Do you want promo codes?</h2>
+        <p>Join our mailing list</p>
+        <form>
+            <input type="email" placeholder="Email">
+            <button class="button button_primary">Subscribe</button>
+        </form>
+    </aside>
+    <section class="location-section">
+        <!-- <section style="display: none;"> -->
+        <h2>Locations</h2>
+        <div class="locations">
+            <div class="location-list">
+                <h3>Branch</h3>
+                <div class="location-buttons">
+                    <button id="location_221B" class="location-buttons-active">221B Baker Street</button>
+                    <button id="location_4PrivetDrive">4 Privet Drive</button>
+                    <button id="location_12GrimmauldPlace">12 Grimmauld Place</button>
+                </div>
+            </div>
+            <div id="iframe-container-221B" class="shown">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.16013324260711673%2C51.52284164825777%2C-0.15668392181396487%2C51.524006509783185&amp;layer=mapnik&amp;marker=51.523424082745215%2C-0.15840858221054077"></iframe>
+                <br />
+                <small><a
+                        href="https://www.openstreetmap.org/?mlat=51.523424&amp;mlon=-0.158409#map=19/51.523424/-0.158409">
+                        View Larger Map</a>
+                </small>
+            </div>
+            <div id="iframe-container-4PrivetDrive" class="hidden">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.7226675748825073%2C51.408021950675064%2C-0.720157027244568%2C51.409189746980296&amp;layer=mapnik&amp;marker=51.40860585255584%2C-0.7214123010635376"></iframe><br /><small><a
+                        href="https://www.openstreetmap.org/?mlat=51.408606&amp;mlon=-0.721412#map=19/51.408606/-0.721412">View
+                        Larger Map</a></small>
+            </div>
+            <div id="iframe-container-12GrimmauldPlace" class="hidden">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.11259377002716066%2C51.52955439401047%2C-0.10757267475128175%2C51.53188374382135&amp;layer=mapnik&amp;marker=51.53071908381394%2C-0.11008322238922119"></iframe><br /><small><a
+                        href="https://www.openstreetmap.org/?mlat=51.530719&amp;mlon=-0.110083#map=18/51.530719/-0.110083">View
+                        Larger Map</a></small>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="tel:5551234567">Call us</a></li>
+            <li><a href="mailto:hello@example.com">Email us (not for orders)</a></li>
+            <li><a href="">Do business with us</a></li>
+        </ul>
+        <p>Made by <a href="http://paol-m.github.io">Paol</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
